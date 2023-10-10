@@ -2,6 +2,7 @@ let weight = document.querySelector('#weight-input')
 let height = document.querySelector('#height-input')
 let btnCalc = document.querySelector('#calculate')
 let result = document.querySelector('#result')
+let imc = document.querySelector('#imc')
 
 function main() {
   calcImc()
@@ -45,7 +46,7 @@ function imcClassification() {
     return
   }
   result.innerHTML = resultUser
-  console.log(imcValue)
+  imc.innerHTML = imcValue
 }
 
 btnCalc.addEventListener('click', e => {
