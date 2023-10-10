@@ -39,22 +39,28 @@
             <label for="weight">
               <i class="fa-solid fa-weight-scale"></i>Peso em Kg:
             </label>
-            <div class="weight-field"></div>
-
-            <input id="weight-input" type="number" name="weight" required />
-            <span>Kg</span>
+            <div class="weight-field">
+              <input id="weight-input" type="number" name="weight" required />
+              <span>Kg</span>
+            </div>
           </div>
           <div class="input-box">
             <label for="height">
               <i class="fas fa-ruler"></i>Altura em metros:
             </label>
-            <div class="height-field"></div>
-
-            <input id="height-input" type="number" name="height" required />
-            <span>M</span>
+            <div class="height-field">
+              <input id="height-input" type="number" name="height" required />
+              <span>M</span>
+            </div>
           </div>
           <button id="calculate">Calcular IMC</button>
-          <div id="result"></div>
+          <div id="result-box">
+            <div id="imc-box">
+              <span>seu imc: </span>
+               <span id="imc"></span>
+            </div>
+            <div id="result"></div>
+          </div>
         </form>
       </section>
     </main>
