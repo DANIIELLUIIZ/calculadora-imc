@@ -108,28 +108,29 @@ body {
 #calculate:hover {
   letter-spacing: 0.1rem;
 }
-#result-box {
+.result-box {
   display: flex;
   align-items: center;
+  padding: 1rem 0;
   gap: 4rem;
   justify-content: space-between;
+  border-top: 1px solid #0b154efa;
 }
+
 #imc-box {
   display: flex;
   width: 8rem;
- 
+
   justify-content: center;
   flex-direction: column;
 }
 #imc-box span {
-
   font-size: 1.4rem;
   font-weight: 600;
 }
 #imc-box #imc {
   width: 4rem;
   font-size: 2.5rem;
-  
 }
 #result {
   display: flex;
@@ -140,6 +141,10 @@ body {
   outline: none;
   word-wrap: break-word;
   border-radius: 1rem;
+}
+
+.hide {
+  display: none;
 }
 
 @media screen and (max-width: 900px) {

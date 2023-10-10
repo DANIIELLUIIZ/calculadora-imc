@@ -3,6 +3,7 @@ let height = document.querySelector('#height-input')
 let btnCalc = document.querySelector('#calculate')
 let result = document.querySelector('#result')
 let imc = document.querySelector('#imc')
+let resultBox = document.querySelector('.result-box')
 
 function main() {
   calcImc()
@@ -19,7 +20,7 @@ function calcImc() {
   }
 
   let imc = (userWeight / (userHeight * userHeight)).toFixed(2)
-
+  resultBox.classList.remove('hide')
   return imc
 }
 
@@ -45,6 +46,7 @@ function imcClassification() {
   } else {
     return
   }
+
   result.innerHTML = resultUser
   imc.innerHTML = imcValue
 }
