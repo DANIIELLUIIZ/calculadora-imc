@@ -9,11 +9,9 @@ function main() {
   calcImc()
   imcClassification()
 }
-
 function calcImc() {
-  let userWeight = parseFloat(weight.value)
-  let userHeight = parseFloat(height.value)
-
+  let userWeight = parseInt(weight.value)
+  let userHeight = parseInt(height.value)
   if (userWeight <= 0 || userHeight <= 0) {
     result.innerHTML = 'Digite valores válidos'
     return
@@ -23,7 +21,6 @@ function calcImc() {
   resultBox.classList.remove('hide')
   return imc
 }
-
 function imcClassification() {
   let imcValue = calcImc()
   let resultUser
