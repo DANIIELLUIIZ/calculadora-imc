@@ -48,7 +48,7 @@ function imcClassification() {
   }
 
   result.innerHTML = resultUser
-  imc.innerHTML = imcValue
+  imc.innerHTML = imcValue.replace('.', ',')
 }
 
 btnCalc.addEventListener('click', e => {
