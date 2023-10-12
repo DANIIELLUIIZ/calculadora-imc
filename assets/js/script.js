@@ -10,14 +10,21 @@ function main() {
   imcClassification()
 }
 function calcImc() {
-  let userWeight = parseInt(weight.value)
-  let userHeight = parseInt(height.value)
-  if (userWeight <= 0 || userHeight <= 0) {
+  let userWeight = parseFloat(weight.value)
+  let userHeight = parseFloat(height.value)
+  let imc
+
+  if (
+    userWeight <= 0 ||
+    userHeight <= 0 ||
+    weight.value === '' ||
+    height.value === ''
+  ) {
     result.innerHTML = 'Digite valores válidos'
     return
   }
 
-  let imc = (userWeight / (userHeight * userHeight)).toFixed(2)
+  imc = (userWeight / (userHeight * userHeight)).toFixed(2)
   resultBox.classList.remove('hide')
   return imc
 }
