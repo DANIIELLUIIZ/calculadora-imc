@@ -31,5 +31,5 @@
 
 ### O que aprendi/aprimorei?
 
-- Lógica de programacão
+- Lógica de programacão (melhorei)
 - Melhor uso da responsividade para diversas telas.
