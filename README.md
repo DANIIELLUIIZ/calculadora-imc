@@ -26,7 +26,7 @@
 ### Tecnologias usadas:
 
 - HTML5
-- JavaScritp
+- JavaScript
 - CSS
 
 ### O que aprendi/aprimorei?
